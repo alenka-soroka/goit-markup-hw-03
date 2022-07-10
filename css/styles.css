@@ -57,6 +57,25 @@ ul {
 .footer-logo-word {
   color: #ffffff;
 }
+
+/* base style */
+
+body {
+  font-family: var(--main-font);
+  color: var(--title-text-cl);
+  margin: 0;
+}
+
+.conteiner {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
 /* header */
 
 .header {
@@ -120,14 +139,144 @@ ul {
   color: #212121;
   background: #f5f4fa;
 }
+.darc-btn {
+  text-align: center;
+  min-width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-bottom: 200px;
+}
+
 .current-btn {
   background-color: var(--acent-cl);
+}
+
+/* hero section */
+
+.header-conteiner {
+}
+
+.hero-section {
+  background-color: var(--dark-bg-cl);
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+
+.feature-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-item {
+}
+
+.feature-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.feature-item-uppertitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.feature-list {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.team-section {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-section {
+  padding-bottom: 94px;
+}
+
+.team-uppertitle {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-uppertitle {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.about-uppertitle,
+.team-uppertitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #212121;
+}
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: #757575;
 }
 
 /* footer */
 
 .footer {
   background-color: var(--dark-bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footlog {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .contacts-list {
@@ -151,72 +300,16 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Студия */
-
-body {
-  font-family: var(--main-font);
-  color: var(--title-text-cl);
-}
-
-/* hero section */
-
-.hero-section {
-  background-color: var(--dark-bg-cl);
-  color: #ffffff;
-}
-
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.feature-item-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-
-.feature-item-uppertitle {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.team-section {
-  background-color: #f5f4fa;
-}
-
-.about-uppertitle,
-.team-uppertitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-.team-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-.team-position {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 /* Портфолио */
+
+.portfolio-sections {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.portfolio-menu {
+  margin-bottom: 50px;
+}
 
 .portfolio-title {
   font-weight: 700;
@@ -232,6 +325,22 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+}
+
+/* .portfolio-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+.content-list {
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
 }
 
 /* Контакты */
